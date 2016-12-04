@@ -2,10 +2,13 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <!-- jQuery -->
-    <script type="html" src="scripts/jquery-3.1.1.js"></script>
-
+    <script src="~/Scripts/jquery-3.1.1.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/Script/jquery.min.js"></script>
+    <script src="~/Script/jquery.mobile.customized.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script type="html" src="scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -23,8 +26,7 @@
                 <ul class="nav navbar-nav">
                     <li><a runat="server" href="~/PagesPublic/BrowseProducts.aspx">Browse All Products</a></li>
                     <li><a runat="server" href="~/PagesAdmin/AdminProduct.aspx">Sign In</a></li>
-                    <li><a runat="server" href="~/PagesPublic/Contact.aspx">Contact</a></li>
-                    <li><a runat="server" href="~/PagesPublic/Feedback.aspx">Feedback</a></li>
+                    <li><a runat="server" href="~/PagesPublic/Contact.aspx">Contact & Feedback</a></li>
                     <li><a runat="server" href="~/PagesPublic/Help.aspx">Help</a></li>
                 </ul>
 
@@ -63,3 +65,5 @@
     <asp:ContentPlaceHolder ID="publicContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
 
 </asp:Content>
+
+

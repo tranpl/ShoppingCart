@@ -123,6 +123,8 @@
     <Folder Include="Images\Small\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contact.php" />
+    <Content Include="Content\custom.css" />
     <Content Include="favicon2.ico" />
     <Content Include="Images\Large\ac5180.jpg" />
     <Content Include="Images\Large\alt5195.jpg" />
@@ -158,6 +160,7 @@
     <Content Include="PagesAdmin\ExampleHighlights.aspx" />
     <Content Include="PagesAdmin\CookieExamples.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="PagesPublic\Contact.aspx" />
     <Content Include="PagesPublic\NestedPublic.master" />
     <Content Include="PagesAdmin\NestedAdmin.master" />
     <Content Include="PagesAdmin\QuickNotes.aspx" />
@@ -172,6 +175,7 @@
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\contact.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\jquery-3.1.1.slim.js" />
@@ -181,6 +185,7 @@
     <Content Include="Scripts\respond.matchmedia.addListener.js" />
     <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\validator.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -298,6 +303,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PagesPublic\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesPublic\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesPublic\NestedPublic.master.cs">
       <DependentUpon>NestedPublic.master</DependentUpon>

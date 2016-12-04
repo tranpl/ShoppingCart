@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/PagesPublic/NestedPublic.Master" AutoEventWireup="true" CodeBehind="CartContents.aspx.cs" Inherits="ShoppingCart.CartContents" %>
+﻿<%@ Page Title="Cart Contents" Language="C#" MasterPageFile="~/PagesPublic/NestedPublic.Master" AutoEventWireup="true" CodeBehind="CartContents.aspx.cs" Inherits="ShoppingCart.CartContents" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="publicContentPlaceHolder" runat="server">
     <h1>Cart Contents</h1>
