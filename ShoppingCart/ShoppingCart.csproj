@@ -125,6 +125,8 @@
   <ItemGroup>
     <Content Include="favicon2.ico" />
     <Content Include="Images\Large\ac5180.jpg" />
+    <Content Include="Images\Large\alt5195.jpg" />
+    <Content Include="Images\Large\alt5255.jpg" />
     <Content Include="Images\Large\b3322l.jpg" />
     <Content Include="Images\Large\festivepet.gif" />
     <Content Include="Images\Large\kn9814l.jpg" />
@@ -134,6 +136,8 @@
     <Content Include="Images\Large\sale-banner.jpg" />
     <Content Include="Images\Large\se6362l.jpg" />
     <Content Include="Images\Large\sn3186l.jpg" />
+    <Content Include="Images\Large\sp5086.jpg" />
+    <Content Include="Images\Large\tfp5258.jpg" />
     <Content Include="Images\Large\tp6481l.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="PagesAdmin\AdminProduct.aspx" />
@@ -151,7 +155,6 @@
     <Content Include="PagesAdmin\ExampleHighlights.aspx" />
     <Content Include="PagesAdmin\CookieExamples.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="PagesPublic\Home.aspx" />
     <Content Include="PagesPublic\NestedPublic.master" />
     <Content Include="PagesAdmin\NestedAdmin.master" />
     <Content Include="PagesAdmin\QuickNotes.aspx" />
@@ -271,13 +274,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="PagesPublic\Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="PagesPublic\Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesPublic\NestedPublic.master.cs">
       <DependentUpon>NestedPublic.master</DependentUpon>
