@@ -2,7 +2,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Contact Form Tutorial by Bootstrapious.com</title>
+    <title>Contact Form</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -17,9 +17,9 @@
 
             <div class="col-lg-8 col-lg-offset-2">
 
-                <h1>Contact form Tutorial from <a href="http://bootstrapious.com">Bootstrapious.com</a></h1>
+            <h1>Contact Form</h1>
 
-                <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
+               <%-- <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>--%>
 
 
                 <form id="contact-form" method="post" action="contact.php" role="form">
@@ -31,14 +31,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="form_name">Firstname *</label>
+                                    <label for="form_name">First Name *</label>
                                     <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required."/>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="form_lastname">Lastname *</label>
+                                    <label for="form_lastname">Last Name *</label>
                                     <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required."/>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -94,5 +94,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="scripts/validator.js"></script>
     <script src="scripts/contact.js"></script>
+    <?php include 'contact.php';?>
 </body>
 </html>

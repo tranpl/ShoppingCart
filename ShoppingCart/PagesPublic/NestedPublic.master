@@ -6,7 +6,6 @@
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="~/Script/jquery.min.js"></script>
-    <script src="~/Script/jquery.mobile.customized.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="~/Scripts/bootstrap.min.js"></script>
 
@@ -33,26 +32,13 @@
                 <ul class="nav pull-right">
                     <li class="cart-link"></li>
                 </ul>
+
             </div>
 
         </div>
     </div>
 
-    <!-- search bar -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-3">
-                <form action="" class="search-form">
-                    <div class="form-group has-feedback">
-                        <label for="search" class="sr-only">Search</label>
-                        <input type="text" class="form-control" name="search" id="search" placeholder="search">
-                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
+    <br />
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
             <asp:Label ID="lblUserSessionId" runat="server"></asp:Label>

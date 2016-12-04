@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ShoppingCart.PagesPublic {
+namespace ShoppingCart {
     
     
     public partial class Contact {
