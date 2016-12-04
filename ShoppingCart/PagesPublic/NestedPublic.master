@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NestedPublic.master.cs" Inherits="ShoppingCart.NestedPublic" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" runat="server" href="~/PagesPublic/BrowseProducts.aspx">Pick of the Critter</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a runat="server" href="~/PagesPublic/BrowseProducts.aspx">Browse</a></li>
+                    <li><a runat="server" href="~/PagesAdmin/AdminProduct.aspx">Admin Area</a></li>
+                </ul>
+                <ul class="nav pull-right">
+                    <li class="cart-link"></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <br />
+
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <asp:Label ID="lblUserSessionId" runat="server"></asp:Label>
+            <asp:LinkButton ID="lbShoppingCart" PostBackUrl="~/PagesPublic/CartContents.aspx" class="btn btn-primary pull-right" runat="server">
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+                <asp:Label ID="lblCart" runat="server" Text="Shopping Cart (0)"></asp:Label>
+            </asp:LinkButton>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <asp:ContentPlaceHolder ID="publicContentPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+
+</asp:Content>
+
+
