@@ -140,6 +140,9 @@
     <Content Include="Images\Large\tfp5258.jpg" />
     <Content Include="Images\Large\tp6481l.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="PagesAdmin\AdminCategories.aspx" />
+    <Content Include="PagesAdmin\AdminOrders.aspx" />
+    <Content Include="PagesAdmin\AdminUsers.aspx" />
     <Content Include="PagesAdmin\AdminProduct.aspx" />
     <Content Include="App_Data\ECOMMERCE.mdf" />
     <Content Include="App_Data\ECOMMERCE_log.ldf">
@@ -223,6 +226,27 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAdmin\AdminCategories.aspx.cs">
+      <DependentUpon>AdminCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAdmin\AdminCategories.aspx.designer.cs">
+      <DependentUpon>AdminCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAdmin\AdminOrders.aspx.cs">
+      <DependentUpon>AdminOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAdmin\AdminOrders.aspx.designer.cs">
+      <DependentUpon>AdminOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PagesAdmin\AdminUsers.aspx.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagesAdmin\AdminUsers.aspx.designer.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagesAdmin\ExampleHighlights.aspx.cs">
       <DependentUpon>ExampleHighlights.aspx</DependentUpon>
