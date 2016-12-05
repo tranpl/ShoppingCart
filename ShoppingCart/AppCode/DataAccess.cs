@@ -182,29 +182,35 @@ namespace ShoppingCart.DAL
 
         public int InsertVisitor()
         {
-            int visitorId;
-
+            int visitorId = new Random().Next(1,99);
             // Create connection
             SqlConnection con = new SqlConnection(_connectionString);
 
+
+
             // Create command
             SqlCommand cmd = new SqlCommand();
+            //SqlCommand identityCommand = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandText = "INSERT VISITOR (LAST_VISIT) VALUES (@Date);SELECT CAST(scope_identity() AS int)";
-
+            //identityCommand.Connection = con;
+            cmd.CommandText = "INSERT VISITOR (VISITOR_ID, LAST_VISIT) VALUES (@VISITOR_ID, @Date); SELECT SCOPE_IDENTITY() AS [LAST_INSERT_ID]";
+            //identityCommand.CommandText = "SELECT SCOPE_IDENTITY() as [SCOPE_IDENTITY]";
+            cmd.CommandType = CommandType.Text;
             // Add parameters
             cmd.Parameters.AddWithValue("@Date", DateTime.Now);
-
-
+            cmd.Parameters.AddWithValue("@VISITOR_ID", visitorId);
 
             // Execute command
             using (con)
             {
                 con.Open();
-                visitorId = (int)cmd.ExecuteScalar();
-
+                SqlDataReader reader;
+                reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    return visitorId;
+                }
             }
-
             return visitorId;
         }
 
